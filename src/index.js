@@ -1,4 +1,5 @@
-import { cube } from './test.js';
+import './style.css';
+import { builder } from './home.js';
 
-console.log('Hello');
-cube(5);
+const content = document.querySelector('#content');
+builder(content);
