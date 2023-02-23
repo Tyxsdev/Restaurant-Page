@@ -7,7 +7,7 @@ function createNav() {
   const fourthLi = document.createElement('li');
   firstLi.textContent = 'Home';
   secondLi.textContent = 'Menu';
-  thirdLi.textContent = 'Drinks';
+  thirdLi.textContent = 'Wines';
   fourthLi.textContent = 'About Us';
   firstLi.classList.add('home', 'selected');
   secondLi.classList.add('menu');
