@@ -3,6 +3,7 @@ import White from './white-wine.jpg';
 import Red from './red-wine.jpg';
 import { updateLiItems } from './updateEvents';
 import { setMenu } from './menu.js';
+import { setAbout } from './about';
 
 export function setWine(content) {
   content.textContent = '';
@@ -35,7 +36,7 @@ export function setWine(content) {
   h4Two.textContent = 'White wine from Roshar';
   pTwo.textContent =
     'Opens with a clear, dense, complex and lemony-flavored, finessed and pure nose of great delicacy.';
-  span.textContent = 'Download our full menu here';
+  span.textContent = `Download our full drink' s menu here`;
 
   main.classList.add('main');
   dishesOne.classList.add('dish');
@@ -75,4 +76,5 @@ export function setWine(content) {
   const items = updateLiItems();
   items.home.addEventListener('click', () => window.location.reload());
   items.menu.addEventListener('click', () => setMenu(content));
+  items.about.addEventListener('click', () => setAbout(content));
 }

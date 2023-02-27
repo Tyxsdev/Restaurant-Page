@@ -131,11 +131,11 @@ h3 {
     color: var(--color-three);
     font-weight: 600;
     margin-top: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.container p {
-    font-size: 1.1rem;
+p {
+    font-size: 1.5rem;
 }
 
 .download {
@@ -148,4 +148,26 @@ h3 {
 
 .download:hover {
     color: var(--color-three);
+}
+
+.credit {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-three);
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-three);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.git {
+    width: 50px;
+    background-color: aqua;
 }

@@ -3,6 +3,7 @@ import Salmon from './salmon.jpg';
 import Asparagous from './asparagus.jpg';
 import { updateLiItems } from './updateEvents';
 import { setWine } from './wines';
+import { setAbout } from './about';
 
 export function setMenu(content) {
   content.textContent = '';
@@ -34,7 +35,7 @@ export function setMenu(content) {
   h4Two.textContent = 'Steak with asparagous';
   pTwo.textContent =
     'A steak accompanied with asparagus ideal to combine with a good wine';
-  span.textContent = `Download our full drink' s menu here`;
+  span.textContent = 'Download our full drinks menu here';
 
   main.classList.add('main');
   dishesOne.classList.add('dish');
@@ -74,4 +75,5 @@ export function setMenu(content) {
   const items = updateLiItems();
   items.home.addEventListener('click', () => window.location.reload());
   items.drinks.addEventListener('click', () => setWine(content));
+  items.about.addEventListener('click', () => setAbout(content));
 }
